@@ -1,0 +1,64 @@
+        <button onclick="sendMessage()">Envoyer</button>
+    </div>
+</div>
+
+<!-- Bouton de chat -->
+<button class="chat-btn" onclick="toggleChat()">💬</button>
+
+<script>
+    function toggleChat() {
+        const chatWindow = document.getElementById("chatWindow");
+        chatWindow.style.display = chatWindow.style.display === "none" ? "block" : "none";
+    }
+
+    function sendMessage() {
+        const userInput = document.getElementById("userInput");
+        const chatBody = document.getElementById("chatBody");
+        const userMessage = userInput.value.trim();
+
+        if (userMessage) {
+            // Afficher le message de l'utilisateur
+            const userMessageElem = document.createElement("div");
+            userMessageElem.className = "message user";
+            userMessageElem.textContent = userMessage;
+            chatBody.appendChild(userMessageElem);
+
+            // Réponse automatique basique
+            const botMessageElem = document.createElement("div");
+            botMessageElem.className = "message bot";
+
+            // Réponses prédéfinies
+            if (userMessage.toLowerCase().includes("faiblesse sexuelle")) {
+                botMessageElem.textContent = "Pour la faiblesse sexuelle, nous proposons un traitement partiel à 10 000 CFA et un traitement complet à 20 000 CFA.";
+            } else if (userMessage.toLowerCase().includes("hémorroïdes")) {
+                botMessageElem.textContent = "Pour les hémorroïdes, le traitement est de 10 000 CFA.";
+            } else if (userMessage.toLowerCase().includes("infection urinaire")) {
+                botMessageElem.textContent = "Le traitement pour l'infection urinaire est à 8 000 CFA.";
+            } else if (userMessage.toLowerCase().includes("règles douloureuses")) {
+                botMessageElem.textContent = "Pour les règles douloureuses, le traitement est de 7 500 CFA.";
+            } else if (userMessage.toLowerCase().includes("constipation")) {
+                botMessageElem.textContent = "Le traitement pour la constipation est de 10 000 CFA.";
+            } else if (userMessage.toLowerCase().includes("livraison")) {
+                botMessageElem.textContent = "Nous offrons la livraison gratuite à Ouagadougou avec paiement à la livraison.";
+            } else if (userMessage.toLowerCase().includes("localisation") || userMessage.toLowerCase().includes("ouagadougou")) {
+                botMessageElem.textContent = "Nous sommes situés à Ouagadougou, vers Tannée, près de la clinique Jean-Baptiste.";
+            } else {
+                botMessageElem.textContent = "Je suis désolé, je ne connais pas la réponse à cette question. Veuillez consulter nos pages pour plus d'informations ou poser une autre question.";
+            }
+
+            chatBody.appendChild(botMessageElem);
+            userInput.value = "";
+            chatBody.scrollTop = chatBody.scrollHeight; // Faire défiler vers le bas
+        }
+    }
+
+    function toggleDetails(button) {
+        const details = button.nextElementSibling;
+        details.classList.toggle("show");
+        button.innerText = details.classList.contains("show") ? "Voir moins" : "Savoir plus";
+        details.style.display = details.classList.contains("show") ? "block" : "none";
+    }
+</script>
+
+</body>
+</html>
