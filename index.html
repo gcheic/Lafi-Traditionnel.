@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lafi Traditionnel</title>
+    <style>
+        /* Style de base pour un aspect professionnel et impactant */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            border: 2px solid #4CAF50;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+        .card h2 {
+            background-color: #4CAF50;
+            color: white;
+            margin: 0;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .card p {
+            padding: 0 15px;
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .card .details {
+            display: none;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+        }
+        .btn {
+            display: block;
+            width: calc(100% - 30px);
+            margin: 10px auto;
+            padding: 12px;
+            color: white;
+            background-color: #4CAF50;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Bienvenue sur Lafi Traditionnel</h1>
+<p style="text-align: center; font-size: 1.2em;">Découvrez les traitements traditionnels pour une meilleure santé.</p>
+
+<div class="container">
+    <!-- Cartes avec informations détaillées -->
+    <div class="card">
+        <h2>Faiblesse Sexuelle</h2>
+        <p class="description">Une perte d'énergie et de vitalité peut affecter votre vie intime.</p>
+        <div class="btn" onclick="toggleDetails(this)">Savoir plus</div>
+        <div class="details">
+            <p><strong>Causes:</strong> Stress, mauvaise alimentation, manque d'exercice.</p>
+            <p><strong>Aliments à éviter:</strong> Aliments gras, sucreries, alcool.</p>
+            <p><strong>Aliments à consommer:</strong> Fruits, légumes, herbes comme le gingembre.</p>
+            <p><strong>Traitement:</strong> Cure à base d'herbes revitalisantes et exercices.</p>
+            <p><strong>Bienfaits:</strong> Restaure l'énergie et la vitalité.</p>
+            <p><strong>Prix:</strong> 15.000 et 7500f CFA</p>
+            <a href="https://wa.me/22657202363" class="btn" target="_blank">Contacter sur WhatsApp</a>
+            <a href="tel:+22657202363" class="btn">Appeler</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Hémorroïdes</h2>
+        <p class="description">Un problème commun provoquant douleur et inconfort.</p>
+        <div class="btn" onclick="toggleDetails(this)">Savoir plus</div>
+        <div class="details">
+            <p><strong>Causes:</strong> Constipation, alimentation faible en fibres, sédentarité.</p>
+            <p><strong>À éviter:</strong> Aliments épicés, alcool, caféine.</p>
+            <p><strong>À consommer:</strong> Fibres, légumes, fruits frais.</p>
+            <p><strong>Traitement:</strong> Crèmes et remèdes naturels anti-inflammatoires.</p>
+            <p><strong>Prix:</strong> 8.500 CFA</p>
+            <a href="https://wa.me/22657202363" class="btn" target="_blank">Contacter sur WhatsApp</a>
+            <a href="tel:+22657202363" class="btn">Appeler</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Infection Urinaire</h2>
+        <p class="description">Inconfort au niveau urinaire, souvent lié aux bactéries.</p>
+        <div class="btn" onclick="toggleDetails(this)">Savoir plus</div>
+        <div class="details">
+            <p><strong>Causes:</strong> Bactéries, mauvaise hygiène, faible hydratation.</p>
+            <p><strong>À éviter:</strong> Boissons sucrées, alcool.</p>
+            <p><strong>À consommer:</strong> Eau, tisanes diurétiques.</p>
+            <p><strong>Traitement:</strong> Antibactériens et remèdes naturels purifiants.</p>
+            <p><strong>Prix:</strong> 10.000 CFA</p>
+            <a href="https://wa.me/22657202363" class="btn" target="_blank">Contacter sur WhatsApp</a>
+            <a href="tel:+22657202363" class="btn">Appeler</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Règles Douloureuses</h2>
+        <p class="description">Soulagement des douleurs menstruelles avec des solutions naturelles.</p>
+        <div class="btn" onclick="toggleDetails(this)">Savoir plus</div>
+        <div class="details">
+            <p><strong>Causes:</strong> Déséquilibres hormonaux, stress.</p>
+            <p><strong>À éviter:</strong> Caféine, aliments gras.</p>
+            <p><strong>À consommer:</strong> Infusions, aliments riches en magnésium.</p>
+            <p><strong>Traitement:</strong> Herbes calmantes et réchauffantes.</p>
+            <p><strong>Prix:</strong> 8.000 CFA</p>
+            <a href="https://wa.me/22657202363" class="btn" target="_blank">Contacter sur WhatsApp</a>
+            <a href="tel:+22657202363" class="btn">Appeler</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Constipation</h2>
+        <p class="description">Améliorer le transit et le confort intestinal naturellement.</p>
+        <div class="btn" onclick="toggleDetails(this)">Savoir plus</div>
+        <div class="details">
+            <p><strong>Causes:</strong> Faible hydratation, manque de fibres.</p>
+            <p><strong>À éviter:</strong> Aliments transformés, peu de fibres.</p>
+            <p><strong>À consommer:</strong> Fibres, eau, pruneaux.</p>
+            <p><strong>Traitement:</strong> Tisanes et aliments riches en fibres.</p>
+            <p><strong>Prix:</strong> 10.000 CFA</p>
+            <a href="https://wa.me/22657202363" class="btn" <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lafi Traditionnel</title>
+    <style>
+        /* Styles de base */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        /* Style du bouton de chat */
+        .chat-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        /* Style de la fenêtre de chat */
+        .chat-window {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 300px;
+            max-height: 400px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            z-index: 1000;
+        }
+        .chat-header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .chat-body {
+            padding: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .chat-footer {
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .chat-footer input {
+            width: 80%;
+            padding: 8px;
+        }
+        .chat-footer button {
+            width: 18%;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .message {
+            margin: 5px 0;
+        }
+        .message.user {
+            text-align: right;
+            color: #333;
+        }
+        .message.bot {
+            text-align: left;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Contenu principal du site -->
+<h1>Bienvenue sur Lafi Traditionnel</h1>
+<p>Découvrez les traitements traditionnels pour une meilleure santé.</p>
+
+<!-- Fenêtre de Chatbot -->
+<div class="chat-window" id="chatWindow">
+    <div class="chat-header">Lafi Chat</div>
+    <div class="chat-body" id="chatBody">
+        <div class="message bot">Bonjour ! Je suis ici pour vous aider avec nos traitements traditionnels. Posez-moi une question !</div>
+    </div>
+    <div class="chat-footer">
+        <input type="text" id="userInput" placeholder="Écrivez ici...">
+        <button onclick="sendMessage()">Envoyer</button>
+    </div>
+</div>
+
+<!-- Bouton de chat -->
+<button class="chat-btn" onclick="toggleChat()">💬</button>
+
+<script>
+    function toggleChat() {
+        const chatWindow = document.getElementById("chatWindow");
+        chatWindow.style.display = chatWindow.style.display === "none" ? "block" : "none";
+    }
+
+    function sendMessage() {
+        const userInput = document.getElementById("userInput");
+        const chatBody = document.getElementById("chatBody");
+        const userMessage = userInput.value.trim();
+
+        if (userMessage) {
+            // Afficher le message de l'utilisateur
+            const userMessageElem = document.createElement("div");
+            userMessageElem.className = "message user";
+            userMessageElem.textContent = userMessage;
+            chatBody.appendChild(userMessageElem);
+
+            // Réponse automatique basique
+            const botMessageElem = document.createElement("div");
+            botMessageElem.className = "message bot";
+
+            if (userMessage.toLowerCase().includes("faiblesse sexuelle")) {
+                botMessageElem.textContent = "Pour la faiblesse sexuelle, nous recommandons un traitement à base de gingembre et d'exercices. Plus de détails sur notre site.";
+            } else if (userMessage.toLowerCase().includes("hémorroïdes")) {
+                botMessageElem.textContent = "Pour les hémorroïdes, nous conseillons un régime riche en fibres et des crèmes anti-inflammatoires. Consultez notre page pour plus d'infos.";
+            } else if (userMessage.toLowerCase().includes("infection urinaire")) {
+                botMessageElem.textContent = "Pour les infections urinaires, nous recommandons des tisanes diurétiques et une bonne hydratation.";
+            } else {
+                botMessageElem.textContent = "Je suis désolé, je ne connais pas la réponse à cette question. Veuillez consulter nos pages pour plus d'informations.";
+            }
+
+            chatBody.appendChild(botMessageElem);
+            userInput.value = "";
+            chatBody.scrollTop = chatBody.scrollHeight; // Faire défiler vers le bas
+        }
+    }
+</script>
+
+</body>
+</html>="_blank">Contacter sur WhatsApp</a>
+            <a href="tel:+22657202363" class="btn">Appeler</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(button) {
+        const details = button.nextElementSibling;
+        details.classList.toggle("show");
+        button.innerText = details.classList.contains("show") ? "Voir moins" : "Savoir plus";
+        details.style.display = details.classList.contains("show") ? "block" : "none";
+    }
+</script>
+
+</body>
+</html>
+
+
+
